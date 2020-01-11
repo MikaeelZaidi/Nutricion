@@ -17,7 +17,7 @@ $form.addEventListener('submit', (e) => {
     $display3.textContent = ""
     $display4.textContent = ""
 
-    fetch('http://localhost:3000/calories?foodName=' + $input.value).then((response) => {
+    fetch('/calories?foodName=' + $input.value).then((response) => {
 
         response.json().then((data) => {
 
